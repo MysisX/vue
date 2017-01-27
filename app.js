@@ -3,7 +3,19 @@ let vm = new Vue({
     methods: {
         warn: function(message, event) {
             if (event) event.preventDefault()
-            alert(message)
+            alert(message + 'hehe')
+        }
+    }
+})
+
+let out = new Vue({
+    el: '#exam-4',
+    data: {
+        output: 'hehe'
+    },
+    methods: {
+        showoutput: function() {
+            alert(this.output)
         }
     }
 })
